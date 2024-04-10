@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+main {
+  overflow-x: clip;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  appearance: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0a58ca;
+  border-radius: 9rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #5d7aff;
+}
+
+.modal {
+  --bs-modal-color: var(--bs-light) !important;
+  --bs-body-bg: var(--bs-dark) !important;
+  --bs-border-color: var(--bs-secondary) !important;
+}
+
+.accordion-button {
+  --bs-accordion-btn-icon-transform: rotate(45deg);
+  --bs-accordion-btn-icon: url('data:image/svg+xml;utf8,<svg class="svg-inline--fa fa-plus fa-w-14 fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>');
+  --bs-accordion-btn-active-icon: url('data:image/svg+xml;utf8,<svg class="svg-inline--fa fa-plus fa-w-14 fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>');
+  --bs-accordion-btn-icon-color: #fff;
+
+  background: none !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.accordion-item {
+  border-radius: var(--bs-accordion-border-radius);
+  border: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color) !important;
+  & h5 {
+    font-size: 1.1rem;
+  }
+}
+
+.form-control::placeholder {
+  color: var(--bs-secondary) !important;
+}
+
+.text-muted {
+  max-width: 80ch;
+  text-align: left;
+}
+
+#div-img-bg {
+  background-image: url(./image/gettyimages-1370929377-612x612.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.dm-serif {
+  font-family: 'DM Serif Display', serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.lead {
+  font-weight: 400 !important;
+}
+
+.btn {
+  --bs-btn-active-bg: #0a58ca;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  border-radius: 15px !important;
+  transition: box-shadow 0.3s ease, translate 0.15s ease !important;
+
+  &:hover {
+    translate: 0 -2px;
+  }
+
+  &.btn-primary:hover,
+  &.btn-outline-primary:hover {
+    box-shadow: 0px 0px 14px var(--bs-btn-hover-bg);
+    background: var(--bs-btn-active-bg);
+  }
+
+  &.btn-outline-light:hover {
+    box-shadow: 0px 0px 14px var(--bs-light);
+  }
+
+  &.btn-success:hover {
+    box-shadow: 0 0 14px var(--bs-success);
+  }
+}
+
+.reviews-link {
+  transition: 0.2s ease;
+  &:hover {
+    color: var(--bs-primary) !important;
+  }
+}
+
+.about-us > .row {
+  min-height: 70vh;
+
+  & > div {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+  }
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+.sticky-div {
+  background: linear-gradient(#051251, #5d7aff);
+}
+
+.what-we-offer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 5px;
+
+  & > div {
+    background-color: var(--bs-light);
+    border-radius: 10px;
+    overflow: clip;
+
+    &:nth-child(1) {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    &:nth-child(2) {
+      grid-column: span 2;
+    }
+    &:nth-child(5) {
+      grid-row: 2 / span 2;
+      grid-column: 3 / span 2;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+      transition: transform 0.3s ease !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us > .row {
+    min-height: 80vh;
+
+    & > div:last-child {
+      min-height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .sticky-div {
+    padding: 60px 45px !important;
+    gap: 5px;
+  }
+
+  footer .container .row:first-child {
+    & > .col-lg-6:first-child {
+      text-align: center !important;
+      margin-bottom: 1.5rem;
+    }
+
+    & > .col-lg-6:last-child {
+      align-items: center !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sticky-div {
+    flex-direction: column !important;
+
+    & > div:first-child {
+      width: 100% !important;
+      height: 15px !important;
+      margin-right: 0 !important;
+      background: linear-gradient(
+        90deg,
+        #0aaf60,
+        yellow 40%,
+        #e2333a
+      ) !important;
+    }
+  }
+
+  .example-course-wrapper > div:last-child {
+    width: 100% !important;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+
+    & > div:last-child {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > div:first-child {
+        width: 100% !important;
+        margin-bottom: 4px !important;
+      }
+
+      & > div:last-child {
+        width: 75% !important;
+      }
+    }
+    & > h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .what-we-offer .container {
+    grid-template-columns: 1fr;
+    min-height: auto !important;
+
+    & > div {
+      grid-column: span 1 !important;
+      &:nth-child(1) {
+        min-height: 350px;
+      }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        min-height: 250px;
+      }
+      &:nth-child(5) {
+        min-height: 350px;
+        grid-row: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-div {
+    margin-top: 30px;
+    padding: 60px 80px !important;
+    gap: 5px;
+  }
+
+  .learn .row .col-sm-6 .wrapper {
+    margin-bottom: 70px !important;
+    padding-inline: 50px !important;
+  }
+}

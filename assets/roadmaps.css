@@ -1,0 +1,42 @@
+.navbar-brand h1 {
+  font-size: 1.5rem !important;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.roadmaps .container {
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+.container .row > div > div {
+  min-height: 250px;
+}
+
+p {
+  color: #c2c2c2;
+}
+
+.btn-custom {
+  background: var(--bs-primary);
+  outline-offset: -5px;
+  outline: 5px solid rgb(56, 217, 169);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #000 !important;
+    font-weight: 600;
+    background: rgb(56, 217, 169);
+    outline-color: var(--bs-primary);
+    outline-offset: 5px;
+  }
+}
+
+.col-lg-4:hover {
+  transition: transform 0.3s ease !important;
+  transform: scale(1.05);
+}
