@@ -23,8 +23,9 @@ p {
 
 .btn-custom {
   background: var(--bs-primary);
-  outline-offset: -5px;
-  outline: 5px solid rgb(56, 217, 169);
+  outline-offset: -3px;
+  outline: 3px solid rgb(56, 217, 169);
+  border-radius: 10px;
   transition: all 0.3s ease;
 
   &:hover {
