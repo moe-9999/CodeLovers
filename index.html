@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/logo.jpg"
+      type="image/x-icon"
+    />
+    <!-- CSS external -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Bootsrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body style="background-color: var(--bs-light)">
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand">
+            <h1>
+              <i class="fas fa-code text-primary"></i>
+              Code<span class="text-primary dm-serif">Lovers</span>
+            </h1>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-nav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#reviews" class="nav-link">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a href="#questions" class="nav-link">Questions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-us text-dark text-center">
+        <div class="row">
+          <div
+            class="col-xl-6 row align-items-center bg-dark text-light text-start px-5"
+          >
+            <div>
+              <h1 class="display-4 mb-3 dm-serif">
+                Learning to code <br />
+                made
+                <span class="text-primary" style="font-weight: 600"
+                  >fun & easy</span
+                >
+              </h1>
+              <p class="mb-4" style="max-width: 45ch; font-size: 1.05rem">
+                From 'Never coded before' to a coding master, embark on a
+                journey with us that you won't regret.
+              </p>
+              <a
+                class="btn btn-primary mb-4"
+                href="./form.html"
+                style="font-size: 1.05rem"
+              >
+                Start learning for free
+              </a>
+              <button class="btn btn-outline-white" type="button" data-bs-toggle="modal" data-bs-target="#formModal" style="--bs-btn-active-bg: #0a58ca;">Explore Courses</a>
+
+              <p class="mb-0">
+                Trusted by <span style="font-weight: 600">21,000 coders</span>
+              </p>
+              <div class="pb-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <a class="reviews-link text-light" href="#"> 600 reviews </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6" id="div-img-bg"></div>
+        </div>
+      </section>
+
+      <section class="container text-dark py-5" id="home">
+        <div class="row">
+          <div
+            class="col-md-6 text-center d-flex justify-content-center align-items-center"
+          >
+            <i class="far fa-comments" style="font-size: 20rem"></i>
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-5 dm-serif mb-4">
+              Let us guide you to from where you are, to where you want to be
+            </h2>
+            <p class="lead mb-4" style="line-height: 1.3">
+              Stuck writing the same code and can’t bring out the beauty of your
+              websites? Drowning in YouTube tutorials that don't make sense?
+              <br /><br />
+              There's a better way with our carefully crafted courses – your
+              guide to learning programming with an easy-to-follow method.
+            </p>
+            <button class="btn btn-primary mb-4" style="font-size: 0.9rem">
+              Start learning for free
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container"
+        id="about"
+        style="background: #f7f5ee; border-radius: 20px !important"
+      >
+        <div class="row p-4">
+          <div class="col-md-3 col-sm-6 p-3">
+            <i
+              class="fas fa-heart fa-2x text-primary p-1 rounded-circle mb-2"
+            ></i>
+            <h4 class="dm-serif" style="max-width: 20ch">Learn how to code by coding your ideas</h4>
+            <p class="text-muted" style="font-size: 1.1rem">
+              Sounds obvious, right? Learn from a no-nonsense, super practical approach.
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 p-3">
+            <i
+              class="fas fa-rocket fa-2x text-primary rounded-circle mb-2"
+            ></i>
+            <h4 class="dm-serif" style="max-width: 20ch;">A proven step-by-step learning process</h4>
+            <p class="text-muted" style="font-size: 1.1rem">
+              Reach your goals faster than you ever imagined with guided techniques and skills.
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 p-3">
+            <i
+              class="fas fa-thumbs-up text-primary fa-2x rounded-circle mb-2"
+            ></i>
+            <h4 class="dm-serif" style="max-width: 20ch;">Easier than your
+              TV remote</h4>
+            <p class="text-muted" style="font-size: 1.1rem">
+              Online courses? No computer science degree needed! Our platform is simple to use
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 p-3">
+            <i
+              class="fas fa-smile fa-2x text-primary rounded-circle mb-2"
+            ></i>
+            <h4 class="dm-serif" style="max-width: 20ch;">Wallet-friendly
+              guarantee</h4>
+            <p class="text-muted" style="font-size: 1.1rem">
+              Private lessons can drain your wallet. Relax! Our courses start at under $1 a day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container learn" style="margin-top: 80px">
+        <div class="row py-5">
+          <div class="col-sm-6">
+            <div class="wrapper" style="margin-bottom: 200px">
+              <h5 class="text-primary mb-3">Learn fast</h5>
+              <h1 class="display-5 dm-serif">
+                Everything you need to become a coding maestro, at one place.
+              </h1>
+              <p class="text-muted mb-4" style="font-size: 1.1rem">
+                Whether you're an absolute beginner or a seasoned programmer,
+                our ever-growing course library is designed just for you. Taught
+                by the best programmers in the world, our classes cover
+                everything you need, from the fundamentals to advanced
+                languages.
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    For all levels: from beginners to pro
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    In-depth courses for all
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Taught by well-known programmers
+                  </h5>
+                </li>
+              </ul>
+              <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#formModal" style="--bs-btn-active-bg: #0a58ca;">Explore Courses</a>
+
+            </div>
+
+            <div class="wrapper" style="margin-bottom: 200px">
+              <h5 class="text-primary mb-3">Connect</h5>
+              <h1 class="display-5 dm-serif">
+                Be part of our coding family, where everyone's got your back!
+              </h1>
+              <p class="text-muted mb-4" style="font-size: 1.1rem">
+                CodeLovers is more than courses. It's a vibrant community that thrives on mutual support, where members connect, share, and inspire each other. Looking for feedback or a nudge? You're in the right place.
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Private and supportive community
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Share, connect, and truly belong
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    From home, yet never alone
+                  </h5>
+                </li>
+              </ul>
+              <a href="./roadmaps.html" class="btn btn-success">Join the Community</a>
+            </div>
+
+            <div class="wrapper">
+              <h5 class="text-primary mb-3">Grow as a coder</h5>
+              <h1 class="display-5 dm-serif">
+                Leverage the power of the coding community
+              </h1>
+              <p class="text-muted mb-4" style="font-size: 1.1rem">
+                To keep growing, it helps to have company. Dive into live and
+                on-demand workshops led by top handpan teachers. We also
+                regularly create fun challenges to boost your growth and foster
+                a vibrant, social vibe, making your handpan journey fun and
+                engaging.
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Live and on-demand workshops
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Exclusive student coaching
+                  </h5>
+                </li>
+                <li class="d-flex mb-2 align-items-center">
+                  <i
+                    class="fas fa-check text-light bg-success me-3 rounded-circle"
+                    style="font-size: 1.2rem; padding: 5px"
+                  ></i>
+                  <h5 class="mb-0" style="font-size: 1rem">
+                    Challenges and rewards
+                  </h5>
+                </li>
+              </ul>
+              <a href="./roadmaps.html" class="btn btn-success">Join the Community</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div
+              class="sticky-div rounded-4 sticky-top d-flex"
+              style="height: 80svh; top: 10%; padding: 120px 80px"
+            >
+              <div
+                class="h-100 rounded-pill me-3"
+                style="
+                  width: 20px;
+                  background: linear-gradient(#0aaf60, yellow 40%, #e2333a);
+                "
+              ></div>
+              <div class="py-2" style="flex: 1">
+                <div class="example-course-wrapper row mb-3 mx-0">
+                  <div
+                    class="bg-dark col-md-6 d-flex align-items-center justify-content-center"
+                    style="height: 100px"
+                  >
+                    <i class="fas fa-play fa-2x text-white"></i>
+                  </div>
+                  <div class="col-md-6">
+                    <h1 class="text-white">01</h1>
+                    <div>
+                      <div
+                        class="w-75 rounded-pill mb-2 bg-light"
+                        style="height: 15px"
+                      ></div>
+                      <div
+                        class="w-50 rounded-pill bg-secondary"
+                        style="height: 15px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="example-course-wrapper row mb-3 mx-0">
+                  <div
+                    class="bg-dark col-md-6 d-flex align-items-center justify-content-center"
+                    style="height: 100px"
+                  >
+                    <i class="fas fa-play fa-2x text-white"></i>
+                  </div>
+                  <div class="col-md-6 align-self-end">
+                    <h1 class="text-white">02</h1>
+                    <div>
+                      <div
+                        class="w-75 rounded-pill mb-2 bg-light"
+                        style="height: 15px"
+                      ></div>
+                      <div
+                        class="w-50 rounded-pill bg-secondary"
+                        style="height: 15px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="example-course-wrapper row mb-3 mx-0">
+                  <div
+                    class="bg-dark col-md-6 d-flex align-items-center justify-content-center"
+                    style="height: 100px"
+                  >
+                    <i class="fas fa-play fa-2x text-white"></i>
+                  </div>
+                  <div class="col-md-6 align-self-end">
+                    <h1 class="text-white">03</h1>
+                    <div>
+                      <div
+                        class="w-75 rounded-pill mb-2 bg-light"
+                        style="height: 15px"
+                      ></div>
+                      <div
+                        class="w-50 rounded-pill bg-secondary"
+                        style="height: 15px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonials py-5 d-flex flex-column align-items-center"
+        id="reviews"
+        style="background-color: #f7f5ee"
+      >
+        <h1 class="dm-serif text-center">
+          21,000 coders have joined us and <br />
+          they seem to love what we do
+        </h1>
+        <p class="text-muted text-center" style="font-size: 1.2rem">
+          The feeling is mutual!<br />We love helping our community.
+        </p>
+        <div class="container">
+          <div class="row text-start g-2">
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  This is an amazing website that helped me learn how to code
+                  <span class="text-bold">ReactJS and SCSS</span>
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+                  <h5 class="mb-0">@FriendlyG0d</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star-half text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  Having these teachings with visuals, explanations, printouts,
+                  etc. is like the
+                  <span class="text-bold"
+                    >pot of gold at the end of the rainbow</span
+                  >. How grateful I am that you've created this learning tool!
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+                  <h5 class="mb-0">@Amarai</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  This is an amazing website that helped me learn how to code
+                  <span class="text-bold">HTML, CSS and Bootstrap</span>
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+                  <h5 class="mb-0">@Tok125</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star-half text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  Very easy way to
+                  <span class="text-bold">learn how to code.</span>
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+
+                  <h5 class="mb-0">@ZackraiY</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  It's a <span class="text-bold">friendly place!!</span> 😀
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+                  <h5 class="mb-0">@m0e_</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-column bg-light rounded-4 p-4 h-100">
+                <div class="mb-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p style="max-width: 35ch">
+                  I did a lot of courses and tutorials before to learn how to
+                  code, but
+                  <span class="text-bold">CodeLovers help me so much!</span> You
+                  wont miss the details for fast progress in independence in
+                  your learning process.
+                </p>
+                <div class="d-flex align-items-center mt-auto">
+                  <i class="fas fa-user-circle fa-2x me-2"></i>
+                  <h5 class="mb-0">@KirbyThePoke</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="what-we-offer bg-primary text-dark py-5">
+        <div class="container overflow-x-auto">
+          <div class="d-flex flex-column">
+            <img
+              src="./assets/image/person coding.jpg"
+              class="image-fluid rounded-top-3 h-50"
+              style="object-fit: cover"
+            />
+            <div
+              class="h-50 px-5 py-4 d-flex flex-column justify-content-center"
+            >
+              <span class="text-primary text-bold">We've got you covered</span>
+              <h2 class="dm-serif text-bold mb-3">Happy students guarenteed</h2>
+              <p class="text-muted">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus nostrum sit hic quidem labore iure dolorum adipisci,
+                cupiditate omnis optio sint sunt, iste amet autem corporis.
+                Dolorum suscipit obcaecati fugiat.
+              </p>
+            </div>
+          </div>
+          <div
+            class="row m-0 align-items-center justify-content-center"
+            style="min-height: 250px"
+          >
+            <div class="col-lg-6 p-4">
+              <span class="text-primary text-bold">On your schedule</span>
+              <h2 class="dm-serif text-bold mb-3">Learn anywhere, anytime</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident laudantium ipsam deleniti a minima! Odio.
+              </p>
+            </div>
+            <img
+              src="./assets/image/istockphoto-1304220446-612x612.jpg"
+              class="image-fluid col-lg-6"
+              style="max-height: 200px; max-width: 300px"
+            />
+          </div>
+          <div
+            class="p-4 d-flex flex-column justify-content-center"
+            style="min-height: 250px"
+          >
+            <span
+              class="mb-2 p-2 border border-2 border-primary rounded-circle"
+              style="width: min-content"
+            >
+              <i class="fas fa-cloud fa-lg text-primary"></i>
+            </span>
+            <h3 class="dm-serif text-bold mb-1">
+              No installation or download required
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div
+            class="p-4 d-flex flex-column justify-content-center"
+            style="min-height: 250px"
+          >
+            <span
+              class="mb-2 p-2 border border-2 border-primary rounded-circle"
+              style="width: min-content"
+            >
+              <i
+                class="fas fa-question fa-lg text-primary"
+                style="min-width: 25px"
+              ></i>
+            </span>
+            <h3 class="dm-serif text-bold mb-1">
+              No installation or download required
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="p-5" style="max-height: 200px">
+              <span class="text-primary text-bold">Fits your code</span>
+              <h2 class="dm-serif text-bold">Compatible with your code</h2>
+              <p class="text-muted">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae numquam reiciendis
+                <a href="#" class="text-pimary">iure corporis</a>
+              </p>
+            </div>
+            <img
+              src="./assets/image/Screenshot_138.png"
+              class="image-fluid rounded-bottom-3 w-100"
+              style="object-fit: cover; flex: 1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="questions py-5"
+        id="questions"
+        style="background-color: #f7f5ee"
+      >
+        <div class="container">
+          <h2 class="mb-5 display-4 dm-serif text-bold text-center">
+            Frequently asked questions
+          </h2>
+          <div class="accordion" id="accordion">
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseZero"
+              >
+                <h5 class="m-0">What is CodeLovers?</h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseZero"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  CodeLovers is an online platform providing a range of coding
+                  courses for every level, taught by the world's best coding
+                  teachers, alongside a vibrant global community of students.
+                  We're excited to welcome you to the family!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                <h5 class="m-0">Is MasterTheHandpan suitable for beginners?</h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseOne"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  Absolutely! In fact, MasterTheHandpan was born with beginners
+                  in mind. Thousands have started their handpan journey with us,
+                  enjoying step-by-step video lessons that are both fun and
+                  effective.
+                  <a href="./form.html"
+                    >Check out all our courses to see which one is best for
+                    you.</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                <h5 class="m-0">Am I too old to learn programming?</h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseTwo"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  Age? Just a number! You're never too old to dive into the
+                  programming world. At CodeLovers, we have students from every
+                  age bracket and corner of the globe. So, whether you're in
+                  your 40s, 50s, 60s, 70s, or even celebrating more candles on
+                  your cake, you'll find like-minded programming enthusiasts
+                  right here, eager to embark on this creative journey with you.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                <h5 class="m-0">
+                  Do I need to be tech-savvy to learn through your platform?
+                </h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseThree"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  Not at all! CodeLovers is designed to be user-friendly. You
+                  can easily navigate through the platform, and if you ever
+                  encounter any issues, our support team is here to help.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+              >
+                <h5 class="m-0">Which course is the best fit for me?</h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseFour"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  Let's find the right path for you!
+                <ul>
+                  <li>Just started learning web development? start with the <span class="text-bold">HTML course!</span></li>
+                  <li>Already have some experience? check out the <span class="text-bold">frameworks</span> we have listed!</li>
+                </ul>
+                  We'd say these are the ones you should check out!
+                <ul>
+                  <li>HTML</li>
+                  <li>Sass and SCSS</li>
+                  <li>ReactJS</li>
+                </ul>
+              </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item d-flex flex-column justify-content-between mb-2"
+            >
+              <button
+                class="accordion-button d-flex align-items-center justify-content-between w-100 px-4 py-3 collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+              >
+                <h5 class="m-0">Is my system OS compatible with your courses?</h5>
+              </button>
+              <div
+                class="accordion-collapse collapse px-4"
+                id="collapseFive"
+                data-bs-parent="#accordion"
+              >
+                <p class="text-muted">
+                  Our courses are avaiable on Windows 7 and above, all mainstream linux distros ( Ubuntu, Fedora, Linux mint etc), macOS. If you have a browser, you are one click away from starting your programming journey!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light pt-5 m-0">
+      <div class="container">
+        <div class="row mb-4">
+          <h3 class="col-lg-6">
+            <i class="fas fa-code text-primary"></i>
+            Code<span class="text-primary dm-serif">Lovers</span>
+          </h3>
+          <div class="col-lg-6 d-flex flex-column align-items-end">
+            <div class="wrapper">
+              <h4 class="mb-3 text-center">Follow us on social media</h4>
+              <div class="d-flex justify-content-between w-100 px-4">
+                <a class="btn btn-outline-primary p-2" href="#" style="min-width: 40px;
+                min-height: 40px;">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a class="btn btn-outline-primary p-2" href="#" style="width: 40px;
+                height: 40px;">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a class="btn btn-outline-primary p-2" href="#" style="width: 40px;
+                height: 40px;">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a class="btn btn-outline-primary p-2" href="#" style="width: 40px;
+                height: 40px;">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="mb-2 text-center" style="color: #999;">About Us</h3>
+            <p class="text-secondary text-center">Being an online front-end developer course, we prioritize making the best coders out of nothing, and all our courses are beginner friendly. Our courses include HTML, CSS, JavaScript, ReactJs, Sass and SCSS, Bootstrap etc.</p>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <nav class="navbar navbar-dark bg-dark justify-content-center">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">
+                    About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#reviews" class="nav-link">
+                    Reviews
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#questions" class="nav-link">
+                    Questions
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="btn-group-vertical">
+              <a href="./form.html" target="_blank" class="btn btn-primary rounded-bottom-0">Join the community</a>
+              <button class="btn btn-outline-primary rounded-top-0" type="button" data-bs-toggle="modal" data-bs-target="#formModal" style="--bs-btn-active-bg: #0a58ca;">Explore Courses</a>
+            </div>
+          </div>
+        </div>
+
+        <h6 class="m-0" style="padding-bottom: 1px; color: #555;">CodeLovers<sup>&copy;</sup>. All rights reserved</h6>
+      </div>
+
+    </footer>
+
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+          </div>
+          <div class="modal-body">
+            <form action="#" style="min-width: 400px">
+              <fieldset>
+                <div class="mb-3">
+                  <label for="#" class="form-label">Email Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="#" class="form-label">Password</label>
+                  <input type="text" class="form-control" />
+                  <div class="form-text" style="color: #999">
+                    Must contain a uppercase letter and a number
+                  </div>
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Get notified for each update
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <input class="btn btn-primary" type="button" value="Sign in" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
